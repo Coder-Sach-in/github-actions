@@ -1,0 +1,14 @@
+name: Code
+
+on:
+  push:
+
+jobs:
+  code-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the Code
+        uses: actions/checkout@v4
+
+      - name: Print the message
+        run: echo "Hello, World!"
